@@ -1,69 +1,63 @@
-# My Colab Project: Interactive Map
+# Interactive Map Analysis using Google Colab
 
-## Overview
-This project demonstrates how to create an interactive map using multiple GeoJSON layers. The map includes data for:
+This repository contains a Google Colab notebook that creates an interactive map for spatial analysis. The map includes various layers such as Local Climate Zones (LCZ), Land Use, NDVI, Urban Density, and Roads, allowing users to explore geospatial data interactively.
 
-- **Local Climate Zones (LCZ)**
-- **Land Use**
-- **NDVI (Vegetation Data)**
-- **Urban Density**
-- **Roads**
+## Features
+- **Interactive Map**: Visualize multiple geospatial layers using Folium.
+- **Layer Descriptions**:
+  - **LCZ Data**: Local Climate Zone data, displayed in blue.
+  - **Land Use**: Land cover data, highlighted in lime green.
+  - **NDVI**: Normalized Difference Vegetation Index, represented in orange.
+  - **Urban Density**: Urban density data, shown in red.
+  - **Roads**: Road network data, displayed in black.
 
-## Setup Instructions
+## Repository Contents
+- `interactive_map.ipynb`: The Google Colab notebook that generates the interactive map.
+- Sample GeoJSON files for each dataset:
+  - `LCZ.geojson`
+  - `Land_Use.geojson`
+  - `NDVIt.geojson`
+  - `UrbanDensity.geojson`
+  - `Roads.geojson`
 
-### Prerequisites
-- **Google Colab** (for running the notebook)
-- **Python 3.x environment**
+## Requirements
+Before running the notebook, ensure you have the following:
+- A Google account to access Google Colab.
+- GeoJSON files for the layers mentioned above.
+- Python packages: `folium`, `geopandas`.
 
-### Install Dependencies
-To install the necessary libraries, run the following command:
-```bash
-pip install -r requirements.txt
-```
-
-### Running the Notebook
-1. Clone this repository to your local machine or Colab environment:
+## Usage Instructions
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/eman-nawzad/Urban-Analysis.git
-   ```
+   git clone <(https://github.com/eman-nawzad/Urban-Analysis)>
+   cd <Urban-Analysis>
 
-2. Navigate to the repository folder:
-   ```bash
-   cd Urban-Analysis
-   ```
+   Upload the GeoJSON Files: Ensure that the GeoJSON files (LCZ.geojson, Land_Use.geojson, etc.) are available in the same directory as the notebook.
 
-3. Open the `Urban_analysis.ipynb` notebook in Google Colab.
+2.Open the Notebook:
 
-4. Execute the code cells. The interactive map will be displayed, allowing you to toggle between different layers (LCZ, Land Use, NDVI-DS, Urban Density, Roads).
+Go to Google Colab.
+Upload interactive_map.ipynb.
+Run the Notebook:
 
-## Data
-The dataset files are stored in the `/data/` folder, and you can either use these directly or replace them with your own files. The required GeoJSON files are:
+Execute each cell in the notebook sequentially.
+The map will be displayed interactively within Colab.
+Explore the Layers:
 
-- `LCZ.geojson`
-- `Land_Use.geojson`
-- `NDVIt.geojson`
-- `UrbanDensity.geojson`
-- `Roads.geojson`
+Use the layer control on the map to toggle between different layers.
+Analyze the data visually and customize the styles as needed.
+Replicating the Analysis
+To replicate the analysis:
 
-## Repository Structure
-```
-Urban-Analysis/
-|— data/
-|   |— LCZ.geojson
-|   |— Land_Use.geojson
-|   |— NDVIt.geojson
-|   |— UrbanDensity.geojson
-|   |— Roads.geojson
-|— scripts/
-|— Urban_analysis.ipynb
-|— requirements.txt
-|— README.md
-|— LICENSE
-|— .gitignore
-```
+Replace the sample GeoJSON files with your own geospatial datasets.
+Update the file paths in the geojson_paths dictionary in the notebook.
+Modify the style settings in the code to match your dataset requirements.
+Notes
+Ensure all GeoJSON files use the EPSG:4326 (WGS 84) coordinate reference system for compatibility.
+For questions or issues, please create an issue in this repository.
+License
+This project is licensed under the MIT License.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 
 
