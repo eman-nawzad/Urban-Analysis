@@ -52,9 +52,12 @@ To replicate the analysis:
 Replace the sample GeoJSON files with your own geospatial datasets.
 Update the file paths in the geojson_paths dictionary in the notebook.
 Modify the style settings in the code to match your dataset requirements.
+
 Notes
 Ensure all GeoJSON files use the EPSG:4326 (WGS 84) coordinate reference system for compatibility.
 For questions or issues, please create an issue in this repository.
+
+
 License
 This project is licensed under the MIT License.
 
