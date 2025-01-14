@@ -5,7 +5,7 @@ This project demonstrates how to create an interactive map using multiple GeoJSO
 
 - **Local Climate Zones (LCZ)**
 - **Land Use**
-- **NDVI-DS (Vegetation Data)**
+- **NDVI (Vegetation Data)**
 - **Urban Density**
 - **Roads**
 
@@ -41,7 +41,7 @@ The dataset files are stored in the `/data/` folder, and you can either use thes
 
 - `LCZ.geojson`
 - `Land_Use.geojson`
-- `NDVI-DS.geojson`
+- `NDVIt.geojson`
 - `UrbanDensity.geojson`
 - `Roads.geojson`
 
@@ -51,7 +51,7 @@ Urban-Analysis/
 |— data/
 |   |— LCZ.geojson
 |   |— Land_Use.geojson
-|   |— NDVI-DS.geojson
+|   |— NDVIt.geojson
 |   |— UrbanDensity.geojson
 |   |— Roads.geojson
 |— scripts/
